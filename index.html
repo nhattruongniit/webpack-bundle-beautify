@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpack Bundle Decoder</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="container text-center zone-name-box">
+    <div class="half bg-success">
+        <p class="">Source</p>
+    </div>
+    <div class="half bg-info">
+        <p class="">Result</p>
+    </div>
+</div>
+<div id="code-zone" class="container full-height">
+    <div class="full-height">
+        <div class="half full-height">
+
+            <div class="code-panel">
+                <div id="bundle-source"></div>
+            </div>
+
+        </div>
+        <div class="half full-height">
+            <div class="code-panel">
+                <div id="bundle-decoded"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center" style="margin-top: 15px;">
+    <a href="javascript:decodeIt()" class="btn btn-info">Decode IT!</a>
+    <a href="javascript:downloadDecoded()" class="btn btn-success">Download decoded <span style="font-size: 1.5em">✈</span></a>
+</div>
+
+
+<script src="assets/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

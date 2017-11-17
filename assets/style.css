@@ -1,0 +1,134 @@
+@media print {
+    *, :after, :before {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: 0 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.bg-success {
+    background-color: #dff0d8;
+}
+
+.bg-info {
+    background-color: #d9edf7;
+}
+
+.container {
+    width: 100%;
+}
+
+.container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.half {
+    width: 50%;
+    float: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.zone-name-box .half {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.full-height {
+    height: 100%;
+}
+
+#code-zone {
+    height: 800px;
+}
+
+#code-zone .half, #code-zone .half > * {
+    height: 100%;
+    position: relative;
+}
+
+.code-panel {
+    padding: 10px;
+    resize: none;
+    height: 100%;
+}
+
+#bundle-source, #bundle-decoded {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
