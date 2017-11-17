@@ -20,8 +20,6 @@ function emptyModule(name) {
 function webpackJsonp() {
     var modules = arguments[1];
     var moduleInStringList = [];
-    var modulePrefix = '// Start of module #';
-    var moduleEndPrefix = '// End of module #';
     var moduleNamePrefix = 'Module_';
     var i = 0, modulesCount = modules.length;
 
@@ -29,9 +27,7 @@ function webpackJsonp() {
     for (; i < modulesCount; i++) {
         if (!modules[i]) {
             moduleInStringList.push([
-                modulePrefix + i, "\n",
-                '' + emptyModule(moduleNamePrefix + i), "\n",
-                moduleEndPrefix + i, "\n\n"
+                '' + emptyModule(moduleNamePrefix + i), "\n"
             ].join("\n"));
 
             continue;
@@ -68,9 +64,7 @@ function webpackJsonp() {
 
 
         moduleInStringList.push([
-            modulePrefix + i, "\n",
-            '' + moduleAsString, "\n",
-            moduleEndPrefix + i, "\n\n"
+            '' + moduleAsString, "\n"
         ].join("\n"));
     }
 
